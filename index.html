@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ArtisticProject</title>
+  </head>
+  <body>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        background: rgb(68, 0, 255);
+      }
+
+      
+      #Vaja {
+        -webkit-animation-name: spinner;
+        -webkit-animation-timing-function: ease-in;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 2s;
+        animation-name: spinner;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+
+      /* WebKit and Opera browsers / 
+@-webkit-keyframes spinner { 
+  from 
+  { 
+    -webkit-transform: rotateY(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateY(-360deg); 
+  } 
+} 
+/ all other browsers */
+      @keyframes spinner {
+        from {
+          -moz-transform: rotateY(0deg);
+          -ms-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        to {
+          -moz-transform: rotateY(-360deg);
+          -ms-transform: rotateY(-360deg);
+          transform: rotateY(-360deg);
+        }
+      }
+    </style>
+    <div>
+      <h1>
+        <i>Pune Wune<br /></i> Ding
+      </h1>
+    </div>
+    <p>
+      <b
+        >Price: 500$<br /><br /><br />
+        
+
+        <br /><br /><br />
+        Thank you shen bozo .i. :)</b
+      >
+    </p>
+    <div id="Vaja"><img src="image.png" /></div>
+  </body>
+</html>
